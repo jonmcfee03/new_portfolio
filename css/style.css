@@ -1,4 +1,5 @@
 html {
+    font-family: 'Inter';
     background-color: black;
     scroll-behavior: smooth;
 }
@@ -14,9 +15,14 @@ a {
 }
 
 h2 {
-    font-family: 'Inter';
     color: #bdb679;
     font-size: 8vw;
+    font-weight: normal;
+}
+
+h3 {
+    color: #bdb679;
+    font-size: 6vw;
     font-weight: normal;
 }
 
@@ -250,6 +256,39 @@ nav button {
 .skills {
     padding: 0 40px 0 60px;
     text-align: center;
+}
+
+
+
+.bubble-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.skills-bubble {
+    background-color: rgb(32, 32, 32);
+    border: 2px solid #bdb679;
+    border-radius: 20px;
+    padding: 25px;
+    width: 40%;
+    height: 80%;
+    margin: auto;
+}
+
+.bubble-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.bubble-content {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
 }
 
 /* END SKILLS STYLES */
