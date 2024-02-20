@@ -1,0 +1,254 @@
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Inter';
+    color: #bdb679;
+    font-size: 8vw;
+    font-weight: normal;
+}
+
+.skip {
+    position: absolute;
+    color: white;
+    left: -1000px;
+    top: auto;
+    font-size: 14px;
+}
+
+.skip:focus {
+    left: auto;
+}
+
+/* BEGIN NAV STYLES */
+nav {
+    position: fixed;
+    left: -70%;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+
+    /* transition */
+    transition: left 1s;
+}
+
+.nav-toggle {
+    position: fixed;
+    left: 0px;
+}
+
+nav li {
+    font-size: 60px;
+    margin: 50px 30px;
+}
+
+nav a {
+    color: white;
+    background-color: transparent;
+}
+nav a:hover, nav a:focus {
+    color: rgb(119, 119, 119);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+nav button {
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    border: none;
+    left: 97%;
+    border-radius: 5px;
+    padding: 15px 15px 15px 17px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: auto;
+    background-color: transparent;
+    float: right;
+}
+
+/* TABLET STYLE */
+@media screen and (min-width: 700px) {
+    nav {
+        left: -60%;
+        width: 60%;
+    }
+
+    nav button {
+        left: 98%;
+    }
+}
+
+/* DESKTOP STYLE */
+@media screen and (min-width: 968px) {
+    nav {
+        position: fixed;
+        top: auto;
+        left: 0;
+        height: auto;
+        background: black;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 40% 14% 14% 14% 14%;
+        justify-content: end;
+        align-content: center;
+    }
+
+    .nav-container > li {
+        font-size: 30px;
+        display: inline;
+        list-style-type: none;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    nav li:first-child {
+        display: none;
+    }
+
+}
+
+/* END NAV STYLES */
+
+/* HOME STYLES */
+.home {
+    padding: 120px 70px 50px;
+    text-align: center;
+}
+
+.home-name {
+    display: block;
+    font-family: 'Inter';
+    color: #bdb679;
+    font-size: 12vw;
+    text-align: left;
+    font-weight: normal;
+}
+
+.home-desc {
+    display: block;
+    font-family: 'Inter';
+    color: #bdb679;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.home > img {
+    width: 80%;
+}
+
+/* HOME DESKTOP VIEW */
+@media screen and (min-width: 968px) {
+    .home {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 80px;
+        margin-left: 5%;
+    }
+    .home-name {
+        font-size: 8vw;
+    }
+
+    .home-desc {
+        font-size: 2vw;
+        line-height: 2.5vw
+    }
+
+    .home > img {
+        float: right;
+        width: 50%;
+        grid-row: 1 / span 2;
+        grid-column: 2;
+        margin: auto;
+    }
+}
+
+/* END HOME STYLES */
+
+/* ABOUT STYLES */
+
+.about {
+    padding: 0 40px 60px 60px;
+    text-align: center;
+}
+
+.about > img {
+    width: 80%;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.about-me {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.about-desc {
+    font-family: 'Inter';
+    color: #bdb679;
+    font-size: 4vw;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width: 968px) {
+    .about {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: left;
+        padding-bottom: 100px;
+    }
+
+    .about > img {
+        display: block;
+        width: 70%;
+        border-radius: 100%;
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+
+    .about-me {
+        font-size: 4vw;
+        padding: 0;
+    }
+
+    .about-desc {
+        font-size: 2vw;
+        padding: 0;
+    }
+}
+
+/* END ABOUT STYLES */
+
+/* SKILLS STYLES */
+
+.skills {
+    padding: 0 40px 0 60px;
+    text-align: center;
+}
+
+/* END SKILLS STYLES */
