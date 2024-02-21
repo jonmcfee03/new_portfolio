@@ -258,8 +258,6 @@ nav button {
     text-align: center;
 }
 
-
-
 .bubble-container {
     display: grid;
     grid-template-columns: auto;
@@ -291,4 +289,38 @@ nav button {
     color: white;
 }
 
+@media screen and (min-width: 968px) {
+    .skills-title {
+        font-size: 4.5vw;
+    }
+
+    .bubble-container {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 20% 10%
+    }
+
+    .skills-bubble:nth-child(2n) {
+        justify-self: start;
+    }
+
+    .skills-bubble:nth-child(2n+1) {
+        justify-self: end;
+    }
+
+    .skills-bubble {
+        width: 50%;
+        margin: 0;
+    }
+
+    .bubble-title {
+        font-size: 2vw;
+    }
+
+    .bubble-content {
+        font-size: 1vw;
+        line-height: 1.5vw;
+        color: white;
+    }
+}
 /* END SKILLS STYLES */
