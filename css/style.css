@@ -61,7 +61,7 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: rgb(170, 170, 170);
     background-color: transparent;
 }
 nav a:hover, nav a:focus {
@@ -107,7 +107,7 @@ nav button {
         height: auto;
         background: black;
         width: 100%;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgb(170, 170, 170);
     }
 
     .nav-container {
@@ -115,10 +115,11 @@ nav button {
         grid-template-columns: 40% 14% 14% 14% 14%;
         justify-content: end;
         align-content: center;
+        text-align: center;
     }
 
     .nav-container > li {
-        font-size: 30px;
+        font-size: 24px;
         display: inline;
         list-style-type: none;
         padding: 20px;
@@ -127,6 +128,20 @@ nav button {
     
     nav li:first-child {
         display: none;
+    }
+
+    .home-link {
+        text-align: left;
+    }
+
+    .home-link > a {
+        color: #bdb679;
+    }
+
+    .home-link > a:hover, .home-link > a:focus {
+        color: #777247;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
     }
 
 }
@@ -220,6 +235,7 @@ nav button {
     padding-bottom: 25px;
 }
 
+/* ABOUT DESKTOP VIEW */
 @media screen and (min-width: 968px) {
     .about {
         display: grid;
@@ -260,12 +276,10 @@ nav button {
 
 .bubble-container {
     display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    gap: 10%;
-    padding-top: 50px;
+    grid-template-rows: 200px 200px 200px 200px;
+    justify-content: center;
+    height: 1000px;
+    padding-top: 25px;
 }
 
 .skills-bubble {
@@ -274,7 +288,7 @@ nav button {
     border-radius: 20px;
     padding: 25px;
     width: 70%;
-    height: 80%;
+    height: 125px;
     margin: auto;
 }
 
@@ -289,6 +303,7 @@ nav button {
     color: white;
 }
 
+/* SKILLS DESKTOP VIEW */
 @media screen and (min-width: 968px) {
     .skills-title {
         font-size: 4.5vw;
@@ -297,7 +312,8 @@ nav button {
     .bubble-container {
         grid-template-columns: auto auto;
         justify-content: center;
-        gap: 20% 10%
+        gap: 75px 75px;
+        box-sizing: border-box;
     }
 
     .skills-bubble:nth-child(2n) {
@@ -310,7 +326,8 @@ nav button {
 
     .skills-bubble {
         width: 50%;
-        margin: 0;
+        height: 150px;
+        margin: 0 20px;
     }
 
     .bubble-title {
@@ -324,3 +341,9 @@ nav button {
     }
 }
 /* END SKILLS STYLES */
+
+/* PROJECTS STYLES */
+
+.projects-title {
+    
+}
